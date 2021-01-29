@@ -21,7 +21,7 @@ case "${TEST}" in
         cp ${TRAVIS_BUILD_DIR}/tests/travis-ci/fixtures/phpstan.neon.dist ${SITE_DIR}/phpstan.neon
 
         # Run static analysis.
-        ./vendor/bin/phpstan analyse ./web/modules/rdf_entity ./web/modules/sparql_entity_storage
+        ./vendor/bin/phpstan analyse ./web/modules/rdf_entity
         exit $?
         ;;
     PHPUnit)

@@ -27,7 +27,7 @@
       "url": "${TRAVIS_BUILD_DIR}"
     },
     {
-      "type": "vcs",
+      "type": "github",
       "url": "https://github.com/idimopoulos/sparql_entity_storage.git"
     },
     {

@@ -12,37 +12,35 @@ bundle: dummy
 rdf_type: 'http://example.com/dummy'
 base_fields_mapping:
   rid:
-    target_id:
-      predicate: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
-      format: resource
-  uid:
-    target_id:
-      predicate: ''
-      format: ''
+    field: null
+    columns:
+      target_id:
+        predicate: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+        format: resource
   label:
-    value:
-      predicate: 'http://example.com/dummy_label'
-      format: t_literal
-  uuid:
-    value:
-      predicate: ''
-      format: ''
+    field: null
+    columns:
+      value:
+        predicate: 'http://example.com/dummy_label'
+        format: t_literal
   langcode:
-    value:
-      predicate: 'http://example.com/language'
-      format: t_literal
-  graph:
-    value:
-      predicate: ''
-      format: ''
+    field: null
+    columns:
+      value:
+        predicate: 'http://example.com/language'
+        format: t_literal
   created:
-    value:
-      predicate: 'http://purl.org/dc/terms/issued'
-      format: 'xsd:dateTime'
+    field: null
+    columns:
+      value:
+        predicate: 'http://purl.org/dc/terms/issued'
+        format: 'xsd:dateTime'
   changed:
-    value:
-      predicate: 'http://example.com/modified'
-      format: 'xsd:integer'
+    field: null
+    columns:
+      value:
+        predicate: 'http://example.com/modified'
+        format: 'xsd:integer'
 graph:
   default: 'http://example.com/dummy/published'
   draft: 'http://example.com/dummy/draft'

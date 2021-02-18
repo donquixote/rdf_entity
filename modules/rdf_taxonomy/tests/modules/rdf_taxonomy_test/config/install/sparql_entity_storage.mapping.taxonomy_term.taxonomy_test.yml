@@ -12,27 +12,44 @@ rdf_type: 'http://example.com/rdf_taxonomy/test'
 graph:
   default: 'http://example.com/rdf_taxonomy/published'
 base_fields_mapping:
+  uuid:
+    value:
+      predicate: ''
+      format: ''
   vid:
-    field: null
-    columns:
-      target_id:
-        predicate: 'http://www.w3.org/2004/02/skos/core#inScheme'
-        format: resource
+    target_id:
+      predicate: 'http://www.w3.org/2004/02/skos/core#inScheme'
+      format: resource
+  langcode:
+    value:
+      predicate: ''
+      format: ''
   name:
-    field: null
-    columns:
-      value:
-        predicate: 'http://www.w3.org/2004/02/skos/core#prefLabel'
-        format: t_literal
+    value:
+      predicate: 'http://www.w3.org/2004/02/skos/core#prefLabel'
+      format: t_literal
   description:
-    field: null
-    columns:
-      value:
-        predicate: 'http://www.w3.org/2004/02/skos/core#definition'
-        format: t_literal
+    value:
+      predicate: 'http://www.w3.org/2004/02/skos/core#definition'
+      format: t_literal
+  format:
+    value:
+      predicate: ''
+      format: ''
+  weight:
+    value:
+      predicate: ''
+      format: ''
   parent:
-    field: null
-    columns:
-      target_id:
-        predicate: 'http://www.w3.org/2004/02/skos/core#broader'
-        format: resource
+    target_id:
+      predicate: 'http://www.w3.org/2004/02/skos/core#broader'
+      format: resource
+  changed:
+    value:
+      predicate: ''
+      format: ''
+  default_langcode:
+    value:
+      predicate: ''
+      format: ''
+  path: {  }

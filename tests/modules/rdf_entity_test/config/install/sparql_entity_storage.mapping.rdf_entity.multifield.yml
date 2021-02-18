@@ -12,23 +12,25 @@ bundle: multifield
 rdf_type: 'http://example.com/multifield'
 base_fields_mapping:
   rid:
-    field: null
-    columns:
-      target_id:
-        predicate: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
-        format: resource
+    target_id:
+      predicate: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+      format: resource
   uid:
-    field: null
-    columns:
-      target_id:
-        predicate: 'http://example.com/multifield_with_owner/uid'
-        format: integer
+    target_id:
+      predicate: 'http://example.com/multifield_with_owner/uid'
+      format: integer
   label:
-    field: null
-    columns:
-      value:
-        predicate: 'http://example.com/multifield_label'
-        format: literal
+    value:
+      predicate: 'http://example.com/multifield_label'
+      format: literal
+  uuid:
+    value:
+      predicate: ''
+      format: ''
+  graph:
+    value:
+      predicate: ''
+      format: ''
 graph:
   default: 'http://example.com/multifield/published'
   draft: 'http://example.com/multifield/draft'

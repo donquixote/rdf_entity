@@ -402,7 +402,7 @@ class Rdf extends ContentEntityBase implements RdfInterface {
    */
   protected function hasFieldMapping($field_name, $column = 'value') {
     $mapping = SparqlMapping::loadByName($this->getEntityTypeId(), $this->bundle());
-    return $mapping && !empty($mapping->getFieldColumnMapping($field_name, $column)['predicate']);
+    return $mapping && !empty($mapping->getFieldColumnMappingPredicate($field_name, $column));
   }
 
 }

@@ -23,14 +23,6 @@ base_fields_mapping:
     value:
       predicate: 'http://example.com/multifield_label'
       format: literal
-  uuid:
-    value:
-      predicate: ''
-      format: ''
-  graph:
-    value:
-      predicate: ''
-      format: ''
 graph:
   default: 'http://example.com/multifield/published'
   draft: 'http://example.com/multifield/draft'

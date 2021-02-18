@@ -23,14 +23,6 @@ base_fields_mapping:
     value:
       predicate: 'http://example.com/dummy_with_owner_label'
       format: literal
-  uuid:
-    value:
-      predicate: ''
-      format: ''
-  graph:
-    value:
-      predicate: ''
-      format: ''
 graph:
   default: 'http://example.com/with_owner/published'
   draft: 'http://example.com/with_owner/draft'

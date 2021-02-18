@@ -15,26 +15,14 @@ base_fields_mapping:
     target_id:
       predicate: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
       format: resource
-  uid:
-    target_id:
-      predicate: ''
-      format: ''
   label:
     value:
       predicate: 'http://example.com/dummy_label'
       format: t_literal
-  uuid:
-    value:
-      predicate: ''
-      format: ''
   langcode:
     value:
       predicate: 'http://example.com/language'
       format: t_literal
-  graph:
-    value:
-      predicate: ''
-      format: ''
   created:
     value:
       predicate: 'http://purl.org/dc/terms/issued'

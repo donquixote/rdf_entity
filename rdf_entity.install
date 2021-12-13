@@ -101,7 +101,7 @@ function rdf_entity_update_8004() {
 
   $new_config_candidates = [];
   $extensions_config = $config_factory->get('core.extension');
-  $file_system = \Drupal::getContainer()->get('file_system');
+  $file_system = \Drupal::service('file_system');
   foreach (['mapping', 'graph'] as $type) {
     // Install the new entity type definitions.
     $entity_type = $entity_type_manager->getDefinition("sparql_$type");

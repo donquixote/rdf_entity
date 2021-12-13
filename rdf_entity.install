@@ -125,7 +125,7 @@ function rdf_entity_update_8004() {
             }
           }
           catch (NotRegularDirectoryException $e) {
-            continue;
+            // Skip non-existing directories.
           }
         }
       }

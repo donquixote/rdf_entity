@@ -7,6 +7,7 @@
 
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Serialization\Yaml;
+use Drupal\Core\Utility\UpdateException;
 use Drupal\sparql_entity_storage\Entity\SparqlGraph;
 use Drupal\sparql_entity_storage\Entity\SparqlMapping;
 use Drupal\sparql_entity_storage\SparqlEntityStorage;
@@ -133,4 +134,18 @@ function rdf_entity_update_8004() {
       $config_factory->getEditable($old_config_name)->delete();
     }
   }
+}
+
+/**
+ * Update storage class for 'rdf_entity' entity type.
+ */
+function rdf_entity_update_8005() {
+  $definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+  /* @see \Drupal\rdf_entity\Entity\Rdf */
+  $entity_type = $definition_update_manager->getEntityType('rdf_entity');
+  if (!$entity_type) {
+    throw new UpdateException("Entity type 'rdf_entity' not found.");
+  }
+  $entity_type->setStorageClass(SparqlEntityStorage::class);
+  $definition_update_manager->updateEntityType($entity_type);
 }
